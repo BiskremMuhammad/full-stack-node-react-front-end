@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*, html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 24px 48px;
+  box-sizing: border-box;
+}
+
+body #root, body .root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  height: 36px;
+  align-items: center;
+  margin-bottom: 52px;
+}
+
+nav a, nav a:visited {
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 6px 16px;
+  background-color: rgba(0, 128, 128, 0.3);
+  text-align: center;
+  margin-right: 12px;
+  color: white;
+  border-radius: 32px;
+}
+
+nav a:hover {
+  color: #007aaf;
+}
+
+.spacer {
+  flex: 1;
+}
+
+form {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  border-radius: 24px;
+  font-size: 14px;
+  margin: 16px 0;
+  transition: all 0.3s;
+}
+
+form input[type='text'], form input[type='password'] {
+  padding: 8px 12px;
+  border: 1px solid #e7e7e7;
+}
+
+form input[type='text']:focus, form input[type='password']:focus {
+  border-color: #007aaf;
+}
+
+form input[type='submit'] {
+  cursor: pointer;
+  padding: 10px 32px;
+  background-color: #007aaf;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #fff;
+  align-self: flex-end;
+}
+
+form input[type='submit']:hover {
+  border-color: #007aaf;
+  background-color: #fff;
+  color: #000;
+}
+
+p.err {
+  font-size: 13px;
+  color: rgb(224, 46, 46);
+  margin-left: 12px;
+}
+
+footer {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px;
+}
